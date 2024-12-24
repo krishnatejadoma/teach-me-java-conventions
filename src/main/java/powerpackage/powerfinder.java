@@ -1,11 +1,15 @@
 package powerpackage;
 
-public class powerfinder {
-    public static int OF(int xyz, int pqr) {
-        int p = 1;
-        for (int i = 0; i<pqr; i++) {
-            p *= xyz;
+//fixed the naming convention and errors 
+//used the camelCase for method name and PascalCase for class name
+//used the meaningful variable names with camelCase
+
+public class PowerFinder {
+    public static int getPowerOf(int base, int expo) {
+        int result = 1;
+        for (int i = 0; i<expo; i++) {
+            result *= base;
         }
-        return p;
+        return result;
     }
 }
